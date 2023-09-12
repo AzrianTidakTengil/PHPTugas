@@ -1,35 +1,48 @@
 <?php
+    function jarak($n) {
+        if ($n >= 0) {
+            echo str_repeat("<br/>",$n);
+        } else {
+            echo "<br/>";
+        }
+    }
+    //array tipe data
     echo "Tipe Data Array";
-    echo "<br/>";
+    jarak(2);
     $ap = ["apa", "coba", "cik"];
     var_dump($ap);
-    echo "<br/>";
+    jarak(1);
 
+    //integer tipe data
     echo "___Tipe Data___";
-    echo "<br/>";
+    jarak(1);
     $x = 1945;
     $y = 0127;
     $z = 0x1B;
     var_dump($x);
-    echo "<br/>";
+    jarak(1);
     var_dump($y);
-    echo "<br/>";
+    jarak(1);
     var_dump($z);
-    echo "<br/>";
+    jarak(1);
 
+
+    // float tipe data
     echo "Float";
-    echo"<br/>";
+    jarak(1);
     $a = 5.324;
     $b = 3.2e4;
     $c = 4E-10;
 
     var_dump($a);
-    echo "<br/>";
+    jarak(1);
     var_dump($b);
-    echo "<br/>";
+    jarak(1);
     var_dump($c);
-    echo "<br/>";
+    jarak(1);
 
+
+    // Boolean tipe data
     $menang = true;
 
     if ($menang == true){
